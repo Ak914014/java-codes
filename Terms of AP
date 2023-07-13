@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Terms_of_AP {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int n  = sc.nextInt();
+    int x=1;
+    for (int i = 1; i <= (n); i++) {
+         
+       int M=(3*x)+2;
+      if(x%4!=0){
+        System.out.println(M);
+      }
+      else{
+        i--;
+      }
+      x++;
+    }
+  }
+}
