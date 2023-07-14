@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class binary_to_decimal {
+    public static int squre(int n) {
+        int p=2;
+        for(int i =1; i<n;i++){
+              
+            p=p*2;
+        }
+        return p;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Give binary numbder");
+        int n = sc.nextInt();
+        int k;
+        int m =0;
+        int bin=0;
+        int p=0;
+        for (int i = n; i >0;) {
+           k= i%10;
+          i=i/10;
+          
+          for (int j = 0; j <=m; j++) {
+             if(k==1){
+                   bin = squre(j);
+                   p=p+bin;
+             }
+            
+          }
+          
+          m++;
+        }
+         System.out.println(p/2);
+        // int z = squre(n);
+        // System.out.println(z);
+        //  int decimal =0, pow =1;
+        //  for(; n>0;){
+        //  int last = n%10;
+            
+        //  decimal += last*pow;
+        //  pow *=2;
+        //  n = n/10;
+        //  }
+
+        //  System.out.println(decimal);
+    
+    }
+}
