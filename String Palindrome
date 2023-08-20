@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class StringPalindrome {
+    
+    public static void Spalindrome(String str){
+
+        int n = str.length();
+        String str1 = "";
+        for (int i = 0; i < n; i++) {
+            str1 = str.charAt(i) +str1;
+        }
+
+        if(str.equals(str1)){
+            System.out.println("yes");
+        }else{
+            System.out.println("no");
+        }
+
+    }
+    public static void main(String [] args){
+
+         Scanner sc = new Scanner(System.in);
+         String str = sc.nextLine();
+         Spalindrome(str);
+
+    }
+}
